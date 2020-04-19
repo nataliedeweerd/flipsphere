@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+
+
+<main>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+
+      <h1 class="page_heading">{{ page.title }}</h1>
+      {% if page.description %}
+      <span class="subheading">{{ page.description }}</span>
+      {% endif %}
+
+      {{ content }}
+
+    </div>
+  </div>
+</div>
+</main>

@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        {{ content }}
+
+        <!-- Home Post List -->
+        {% for post in site.posts limit : 5 %}
+
+        <article class="post-preview">
+          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+            <div class="post__first_letter">{{ post.title | slice: 0 }}</div>
+            <h2 class="post-title">{{ post.title }}</h2>
+            {% if post.subtitle %}
+              <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+            {% else %}
+              <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+            {% endif %}
+          </a>
+          <p class="post-meta">Posted on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
+          </p>
+        </article>
+
+        {% endfor %}
+
+        <!-- Pager -->
+        {% if site.posts.size > 2 %}
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
+        </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+
+</main>
