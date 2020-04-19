@@ -48,6 +48,7 @@ _Boat_
 There just isn’t enough information here about the image - plus, I'd argue it's a ship, not a boat. Depending on the context of the site, the location and type of ship may be important. If they’re not, include detail about the appearance of the ship, whether it’s decrepit, etc. For example, a better alt attribute here could be "A white cruise ship named Seaborn Quest".
 
 ![A bad example of an Alt attribute - "The word RESOLUTIONS spelt out in Scrabble letters. The R is worth 1 point, the E is worth 1 point, the S is worth 1 point, the O is worth 1 point, the L is worth 2 points, the U is worth 3 points, the T is worth 3 points, the I is worth 1 point, the N is worth 1 point. In total the word scores 15 points."](https://dev-to-uploads.s3.amazonaws.com/i/cez0xxgoysveqtoea1kc.jpg)
+_The word RESOLUTIONS spelt out in Scrabble letters. The R is worth 1 point, the E is worth 1 point, the S is worth 1 point, the O is worth 1 point, the L is worth 2 points, the U is worth 3 points, the T is worth 3 points, the I is worth 1 point, the N is worth 1 point. In total the word scores 15 points._
 
 This is just unnecessarily long... Alt text this long belongs in a caption, rather than an alt attribute – especially if the information is important. Ideally, just the first sentence should be used. It’s important not to make your alt text too long. It needs to be as succinct and descriptive as possible.
 
