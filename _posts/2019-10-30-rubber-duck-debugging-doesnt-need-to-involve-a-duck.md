@@ -26,11 +26,11 @@ Rubber Duck Debugging (or Rubber Ducking) is explaining to an inanimate object w
 
 Rubber Duck Debugging works because it forces you to break down a complex problem into smaller chunks as you explain it to your duck. For example:
 
-Dev: "Duck, why isn't my email sending?"
-Duck: "..."
-Dev: "The email is generated automatically when someone completes the contact form on my website, and it should then send to the site admin..."
-Duck: "..."
-Dev: "OMG DUCK I'M USING THE WRONG VARIABLE!"
+**Dev:** "Duck, why isn't my email sending?"<br />
+**Duck:** "..."<br />
+**Dev:** "The email is generated automatically when someone completes the contact form on my website, and it should then send to the site admin..."<br />
+**Duck:** "..."<br />
+**Dev:** "OMG DUCK I'M USING THE WRONG VARIABLE!"
 
 Sometimes we developers can't see the forest for the trees. We're in so deep into our code that we can no longer *see* the problem, regardless of how obvious it may be. Breaking down the problem section by section, line by line, can help us realise where the issue is.
 
