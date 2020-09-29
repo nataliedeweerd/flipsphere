@@ -299,7 +299,23 @@ h3.post-subtitle {
     animation: pulse 1s 1;
 }
 
+.social__icon.social__icon--divine img {
+    width: 40px;
+    margin: -7px 0 0 0;
+}
+
+.social__icon.social__icon--divine img {
+    width: 40px;
+    margin: -7px 0 0 0;
+    transition: 0.25s;
+}
+
+.social__icon.social__icon--divine:hover img {
+    filter: brightness(3) saturate(5) hue-rotate(-15deg);
+}
+
 footer .copyright {
+    padding-top:10px;
     font-size: 12px;
     color: rgba(33, 37, 41, 0.65) !important;
 }
