@@ -14,16 +14,26 @@ layout: default
         {% for post in site.posts limit : 5 %}
 
         <article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+          {% if post.external_link %}
+          <a href="{{ post.external_link }}" target="_blank">
+          {% else %}
+            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+          {% endif %}          
             <div class="post__first_letter">{{ post.title | slice: 0 }}</div>
-            <h2 class="post-title">{{ post.title }}</h2>
+            <h2 class="post-title">{{ post.title }}</h2>            
             {% if post.subtitle %}
               <h3 class="post-subtitle">{{ post.subtitle }}</h3>
             {% else %}
               <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
             {% endif %}
           </a>
-          <p class="post-meta">Posted on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
+          <p class="post-meta">
+            Posted on {{ post.date | date: '%B %d, %Y' }} &middot; 
+            {% if post.external_link %}
+              External <span class="external_link"></span>
+            {% else %}
+              {% include read_time.html content=post.content %}
+            {% endif %}            
           </p>
         </article>
 

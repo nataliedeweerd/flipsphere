@@ -27,11 +27,11 @@
     border:0;
 }
 
-::-webkit-scrollbar-thumb:vertical{
+/*::-webkit-scrollbar-thumb:vertical{
 }
 
 ::-webkit-scrollbar-thumb:horizontal{
-}
+}*/
 
 ::-webkit-scrollbar-thumb:hover{
     background-color: rgba(83, 182, 206,0.7);
@@ -275,6 +275,16 @@ h3.post-subtitle {
 .post-preview a:focus h3, 
 .post-preview a:hover h3 {
     color:#212529;
+}
+
+.external_link{
+    display: inline-block;
+    background: url('/img/external.png') no-repeat center center;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    opacity: 0.7;
+    margin-left: 5px;
 }
 
 /* footer */
