@@ -18,7 +18,7 @@ layout: default
           <a href="{{ post.external_link }}" target="_blank">
           {% else %}
             <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-          {% endif %}          
+          {% endif %}
             <div class="post__first_letter">{{ post.title | slice: 0 }}</div>
             <h2 class="post-title">{{ post.title }}</h2>            
             {% if post.subtitle %}
@@ -33,7 +33,7 @@ layout: default
               External <span class="external_link"></span>
             {% else %}
               {% include read_time.html content=post.content %}
-            {% endif %}            
+            {% endif %}
           </p>
         </article>
 
