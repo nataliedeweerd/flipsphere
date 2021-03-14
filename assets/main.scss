@@ -405,12 +405,19 @@ main p a:hover:after {
 
 /* syntax highlighting */
 
+p code {
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
 .highlight table td,
 .highlight code {padding: 10px 15px;display: block;}
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
   color: #f8f8f2;
   background-color: #272822;
+  font-size:80%;
 }
 .highlight .err {
   color: #272822;
