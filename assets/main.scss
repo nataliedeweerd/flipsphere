@@ -491,3 +491,79 @@ p code {
 .highlight .ss {
   color: #a6e22e;
 }
+
+
+
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+
+    body{
+        background:#010407;
+        color: #66819a;
+    }
+
+    main:not(.post):before,
+    nav#mainNav,
+    #mainNav.is-fixed,
+    header.masthead {
+        background: #031018;
+    }
+
+    .post-preview a,
+    .post-preview a:focus h3, 
+    .post-preview a:hover h3,
+    .post-preview > .post-meta,
+    footer .copyright,
+    header.masthead .page-heading, 
+    header.masthead .post-heading, 
+    header.masthead .site-heading,
+    .post-preview a .post__first_letter,
+    header.masthead .post-heading .meta,
+    main p a {
+        color: #66819a !important;
+    }
+    .social__icon,
+    .btn.btn-primary {
+        background: #031018;
+        color: #66819a;
+    }
+
+    .social__icon:hover,
+    .btn.btn-primary:hover,
+    .btn.btn-primary:active {
+        background: #66819a !important;
+        color: #031018 !important;
+    }
+
+    main p a:hover {
+        color:#59b7cf !important;
+    }
+
+    .social__icon.social__icon--divine img {
+        filter: brightness(1.7) saturate(10) hue-rotate(198deg);
+    }  
+    
+    .social__icon.social__icon--divine:hover img {
+        filter: brightness(0.2) saturate(40) hue-rotate(188deg);
+    }
+
+    .external_link {
+        background: url(/img/external--dark.png) no-repeat center center;
+        background-size: contain;
+    }
+
+    p code {
+        background: #000;        
+    }
+
+    .highlight, .highlight .w {
+        background-color: #000;
+    }
+
+    pre code {
+        opacity: 0.8;
+    }
+    
+}
