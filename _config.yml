@@ -11,7 +11,7 @@ github_username:    nataliedeweerd
 dev_username:       nataliedeweerd
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-31151002-2 # out your google-analytics code
+google_analytics:   G-P7NT7TLWXC # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
